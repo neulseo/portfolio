@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1.0">
-        <title>Neul's Portfolio</title>
-        <meta name="description" content="Portfolio for Neul the software engineer">
-        <meta name="author" content="Neul">
-        <link rel="icon" type="image/png" href="imgs/favicon.png">
-        <script src="https://kit.fontawesome.com/506603513d.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div class="navbar_logo">
-                <i class="fas fa-wind"></i>
-                <a href="#">Neul</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Neul's Portfolio</title>
+    <meta name="description" content="Portfolio for Neul the software engineer">
+    <meta name="author" content="Neul">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <script src="https://kit.fontawesome.com/506603513d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar_logo">
+            <i class="fas fa-wind"></i>
+            <a href="#">Neul</a>
+        </div>
+        <div class="navbar_menu">
+            <ul class="navbar_menu">
+                <li class="navbar_menu_item">Home</li>
+                <li class="navbar_menu_item">About</li>
+                <li class="navbar_menu_item">Skills</li>
+                <li class="navbar_menu_item">Work</li>
+                <li class="navbar_menu_item">Testimonials</li>
+                <li class="navbar_menu_item">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>I am a software engineer focused on front-end development.
+            I have worked on individual projects for reknown companies in Washington, DC.
+            My works include professional advertisements for food business and stores.
+        </p>
+        <div class="about_majors">
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major_title">Front-end</div>
+                <div class="major_description">
+                    HTML, CSS and JavaScript
+                </div>
             </div>
-            <div class="navbar_menu">
-                <ul class="navbar_menu">
-                    <li class="navbar_menu_item">Home</li>
-                    <li class="navbar_menu_item">About</li>
-                    <li class="navbar_menu_item">Skills</li>
-                    <li class="navbar_menu_item">Work</li>
-                    <li class="navbar_menu_item">Testimonials</li>
-                    <li class="navbar_menu_item">Contact</li>
-                </ul>
+            <div class="major">
+                <div class="major_icon">
+                    <i class="far fa-file-code"></i>
+                </div>
+                <div class="major_title">Back-end</div>
+                <div class="major_description">
+                    HTML, CSS and JavaScript
+                </div>
             </div>
-        </nav>
-        <!-- About -->
-        <section id="about">About</section>
-        <!-- Skills -->
-        <section id="skills">Skills</section>
-        <!-- Work -->
-        <section id="work">Work</section>
-        <!-- Testimonials -->
-        <section id="testimonials">Testimonials</section>
-        <!-- Contact -->
-        <section id="contact">Contact</section>
-    </body>
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="major_title">Mobile</div>
+                <div class="major_description">
+                    HTML, CSS and JavaScript
+                </div>
+            </div>
+        </div>
+        <div class="about_majors"></div>
+        <div class="about_jobs">
+            <div class="job">
+                <img src="" alt="" class="job_logo">
+                <p class="job_name"></p>
+                <p class="job_period"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <p></p>
+    </section>
+    <!-- Work -->
+    <section id="work">
+        <h1>Work</h1>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h1>Contact</h1>
+    </section>
+</body>
 </html>
