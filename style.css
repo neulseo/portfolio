@@ -1,2 +1,59 @@
-font-family: 'Open Sans',
-sans-serif;
+/* Global */
+:root {
+    /* Color */
+    --color-dark-grey: darkgrey;
+    --color-grey: grey;
+    --color-light-grey: lightgrey;
+    --color-blue: blue;
+    --color-yellow: yellow;
+    --color-orange: orange;
+    --color-black: black;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
+}
+
+h2 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
