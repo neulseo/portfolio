@@ -4,11 +4,10 @@
     --color-dark-grey: darkgrey;
     --color-grey: grey;
     --color-light-grey: lightgrey;
-    --color-blue: blue;
-    --color-yellow: yellow;
-    --color-orange: orange;
-    --color-pink: pink;
-    --color-dark-pink: rgb(240, 148, 163);
+    --color-pink: #d83f87;
+    --color-dark-purple: #2a1b3d;
+    --color-purple: #44318d;
+    --color-light-purple: #906bb3;
     --color-black: black;
     --color-white: white;
 
@@ -31,6 +30,13 @@
 /* Universal tags */
 * {
     box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /* Typography */
@@ -82,7 +88,7 @@ ul {
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: var(--color-purple);
     align-items: center;
     color: var(--color-white);
     padding: 16px;
@@ -110,5 +116,34 @@ ul {
 }
 
 .navbar_menu_item:hover {
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-light-purple);
+}
+
+/* Home */
+#home {
+    background: url('imgs/background.png') center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home_avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home_title,
+.home_description {
+    color: var(--color-white);
+}
+
+.home_contact {
+    color: white;
+    font-size: var(--font-regular);
+    font-weight: var(--weight-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 2px solid white;
 }
