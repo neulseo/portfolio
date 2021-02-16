@@ -157,6 +157,12 @@ li {
     text-align: center;
 }
 
+#home.home-transparent {
+    background-color: transparent;
+    transition: all var(--animation-duration) ease-in-out;
+    opacity: 0.8;
+}
+
 .home_avatar {
     width: 250px;
     height: 250px;
