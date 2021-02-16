@@ -92,40 +92,28 @@ ul {
     padding-left: 0;
 }
 
+li {
+    list-style: none;
+}
+
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-violet);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
-    animation-name: navbar-color;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    z-index: 1;
 }
 
-@keyframes navbar-color {
-    0% {
-        background-color: var(--color-violet);
-    }
-
-    25% {
-        background-color: var(--color-dark-blue);
-    }
-
-    50% {
-        background-color: var(--color-dark-violet);
-    }
-
-    75% {
-        background-color: var(--color-dark-blue);
-    }
-
-    100% {
-        background-color: var(--color-violet);
-    }
+#navbar.navbar-dark {
+    transition: all var(--animation-duration) ease-in-out;
+    background-color: var(--color-violet);
+    padding: 8px;
+    opacity: 0.8;
 }
 
 .navbar_menu {
@@ -133,7 +121,7 @@ ul {
 }
 
 .nvabar_logo {
-    font-size: medium;
+    font-size: var(--font-medium);
     font-weight: var(--weight-bold);
 }
 
@@ -152,10 +140,20 @@ ul {
     background-color: var(--color-light-violet);
 }
 
+.navbar_toggle-btn {
+    position: absolute;
+    top: 14PX;
+    right: 32px;
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
 /* Home */
 #home {
     background: url('imgs/background.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
@@ -477,4 +475,24 @@ ul {
 
 .contact_links i:hover {
     transform: scale(1.1);
+}
+
+/* Responsive */
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar_toggle-btn {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar_menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
 }
