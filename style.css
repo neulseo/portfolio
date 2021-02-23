@@ -184,6 +184,11 @@ li {
     border: 2px solid white;
 }
 
+.home_contact:hover {
+    background: var(--color-violet);
+    color: white;
+}
+
 /* Section common */
 .section {
     padding: 50px;
@@ -329,7 +334,8 @@ li {
     border: 1px solid var(--color-light-violet);
     border-radius: var(--size-border-radius);
     font-size: var(--font-regular);
-    padding: 8px 40px;
+    padding: 8px 20px;
+    margin: 3px 1px;
 }
 
 .category_btn.selected,
@@ -551,9 +557,59 @@ li {
         display: block;
     }
 
+    .section {
+        padding: 16px;
+    }
+
+    .about_majors {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .major {
+        padding: 12px;
+        margin-bottom: 30px;
+
+    }
+
     .skillset {
         display: block;
         margin: 2% 0;
+    }
+
+    .category_btn {
+        margin: 3px;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial_avatar:nth-child(odd),
+    .testimonial_avatar:nth-child(even) {
+        margin: 8px;
+    }
+
+    .testimonial_avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .testimonial_speech-bubble {
+        order: 1;
+    }
+
+    .arrow-up {
+        bottom: 25px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
     }
 
 }
