@@ -1,5 +1,6 @@
 'use strict';
 
+// Make navbar transparent when it's on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -12,6 +13,13 @@ document.addEventListener('scroll', () => {
 })
 
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar_toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
+
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar_menu');
 navbarMenu.addEventListener('click', (event) => {
@@ -20,6 +28,7 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
 

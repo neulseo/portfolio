@@ -528,6 +528,11 @@ li {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-violet);
+    }
+
+    #navbar.navbar-dark {
+        padding: 16px;
     }
 
     .navbar_menu {
@@ -536,4 +541,9 @@ li {
         width: 100%;
         display: none;
     }
+
+    .navbar_menu.open {
+        display: block;
+    }
+
 }
