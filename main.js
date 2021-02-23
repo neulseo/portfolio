@@ -42,7 +42,7 @@ document.addEventListener('scroll', () => {
 // Show "arrow-up" button when scrolling down
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
-    if(window.scrollY > homeHeight / 2) {
+    if (window.scrollY > homeHeight / 2) {
         arrowUp.classList.add('visible');
     } else {
         arrowUp.classList.remove('visible');
@@ -54,6 +54,44 @@ document.addEventListener('scroll', () => {
 arrowUp.addEventListener('click', () => {
     scrollIntoView('#home');
 })
+
+
+// Projects
+const workBtnContainer = document.querySelector('.work_categories');
+const projectContainer = document.querySelector('.work_projects');
+// 음........'.project'는 안됐는데 .'projects'는 됨. 무슨일??
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click', (e) => {
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    console.log(filter);
+    if (filter == null) {
+        return;
+    }
+
+    // Remove selection from the previous item and select the new one
+    const active = document.querySelector('.category_btn.selected');
+    active.classList.remove('selected');
+    const target = e.target.nodeNme === 'BUTTON' ? e.target :
+        e.target.parentNode;
+    e.target.classList.add('selected');
+
+    projectContainer.classList.remove('anim-out');
+    setTimeout(() => {
+        projects.forEach((project) => {
+            console.log(project.dataset.type);
+            if (filter === '*' || filter === project.dataset.type) {
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        })
+    });
+
+
+});
+
+
 
 // Default function for the view when scroll
 function scrollIntoView(selector) {
