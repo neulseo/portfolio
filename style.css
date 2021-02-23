@@ -312,6 +312,11 @@ li {
 
 .tools {
     background-color: grey;
+    padding: 15px;
+}
+
+.etc {
+    padding: 12px 0;
 }
 
 /* Work */
@@ -544,6 +549,11 @@ li {
 
     .navbar_menu.open {
         display: block;
+    }
+
+    .skillset {
+        display: block;
+        margin: 2% 0;
     }
 
 }
